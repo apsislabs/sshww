@@ -1,0 +1,14 @@
+# Site settings
+title: Scott Spencer Higson Woodworks
+description: >
+  Welcome to Scott Spencer Higson Woodworks.
+github_username:  wkirby
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
