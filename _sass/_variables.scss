@@ -8,7 +8,8 @@ $red: #B64926;
 $yellow: #FFB03B;
 $text-color: #434d54;
 $background-color: #ffffff;
-$overlay: transparentize(#333333, 0.55);
+$footer-background: #F7F9FA;
+$overlay: transparentize($text-color, 0.55);
 
 // Fonts
 $font-base: 'Lora', Georgia, serif;

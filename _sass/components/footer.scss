@@ -1,0 +1,11 @@
+.footer {
+    height: 100px;
+    background-color: $footer-background;
+
+    &__content {
+        text-align: center;
+        @include vertical-align();
+        color: lighten($text-color, 30%);
+        font-size: .65em;
+    }
+}

@@ -2,12 +2,12 @@
 @import '_variables', '_mixins';
 
 @import 'pages/home';
-@import 'components/nav';
+
+@import 'components/nav',
+        'components/footer';
 
 html,
-body,
-.page-content,
-#wrapper {
+body {
     height: 100%;
     background: $background-color;
 }
