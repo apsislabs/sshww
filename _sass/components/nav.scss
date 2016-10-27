@@ -28,7 +28,11 @@ $nav-height: 55px;
         text-transform: lowercase;
 
         &:hover {
-            color: $red;
+            color: $link-color;
+
+            &:hover {
+                color: darken($link-color, 5%);
+            }
         }
     }
 
@@ -38,7 +42,11 @@ $nav-height: 55px;
         top: 0 !important;
 
         .nav__link {
-            color: $red;
+            color: $link-color;
+
+            &:hover {
+                color: darken($link-color, 5%);
+            }
         }
     }
 }

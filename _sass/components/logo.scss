@@ -1,0 +1,19 @@
+$logo-color: white;
+
+.logo {
+    @include vertical-align(relative);
+    padding: $padding-base;
+    text-align: center;
+
+    &__title {
+        font-size: 1.25em;
+        margin: 0;
+        color: $logo-color;
+        padding: $padding-small;
+        border: 3px solid $logo-color;
+        display: inline-block;
+        background: transparentize($logo-color, 0.9);
+        text-shadow: 0 1px 5px $shadow-color;
+        box-shadow: 0 1px 5px  $shadow-color;
+    }
+}

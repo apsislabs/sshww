@@ -10,6 +10,8 @@ $text-color: #434d54;
 $background-color: #ffffff;
 $footer-background: #F7F9FA;
 $overlay: transparentize($text-color, 0.55);
+$shadow-color: transparentize(black, 0.75);
+$link-color: $red;
 
 // Fonts
 $font-base: 'Lora', Georgia, serif;

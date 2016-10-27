@@ -6,3 +6,17 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+@mixin cover($url, $color) {
+  background: $color url($url) center center no-repeat;
+  background-size: cover;
+}
+
+@mixin overlay($color, $opacity: 1) {
+  &:before {
+    content: '';
+    @include position(absolute, 0);
+    background-color: $color;
+    opacity: $opacity;
+  }
+}

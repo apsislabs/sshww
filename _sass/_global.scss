@@ -1,0 +1,29 @@
+html,
+body {
+    height: 100%;
+    background: $background-color;
+}
+
+.wrapper {
+    margin: $padding-base;
+    position: relative;
+
+    > .content {
+        min-height: 100vh;
+    }
+}
+
+body {
+    font-family: $font-base;
+    color: $text-color;
+    line-height: 1.625;
+
+    @include media($desktop) {
+        font-size: 22px;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $font-heading;
+    font-weight: normal;
+}
