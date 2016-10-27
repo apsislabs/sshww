@@ -1,1 +1,33 @@
+@import 'bourbon/bourbon', 'neat/neat';
+@import '_variables', '_mixins';
 
+@import 'pages/home';
+@import 'components/nav';
+
+html,
+body,
+.page-content,
+#wrapper {
+    height: 100%;
+    background: $background-color;
+}
+
+.page-content {
+    margin: $padding-base;
+    position: relative;
+}
+
+body {
+    font-family: $font-base;
+    color: $text-color;
+    line-height: 1.625;
+
+    @include media($desktop) {
+        font-size: 22px;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $font-heading;
+    font-weight: normal;
+}

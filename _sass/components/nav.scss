@@ -1,0 +1,44 @@
+$nav-height: 55px;
+
+.nav {
+    @include position(fixed, $padding-base $padding-base null $padding-base);
+    @include transition(background 0.5s ease, top .25s ease-in-out);
+    z-index: 99999;
+    height: $nav-height;
+    font-size: 18px;
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+
+    &__item {
+        display: inline-block;
+        line-height: $nav-height;
+    }
+
+    &__link {
+        @include transition(color 0.15s ease);
+
+        color: white;
+        text-decoration: none;
+        padding: 0 1em;
+        text-transform: lowercase;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    &--scrolled {
+        background: transparentize(white, 0.15);
+        border-bottom: 1px solid #eee;
+        top: 0 !important;
+
+        .nav__link {
+            color: $red;
+        }
+    }
+}

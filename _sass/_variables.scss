@@ -1,0 +1,26 @@
+$padding-base: 20px;
+$padding-large: $padding-base * 2;
+$padding-small: $padding-base / 2;
+
+// Colors
+$green: #468966;
+$red: #B64926;
+$yellow: #FFB03B;
+$text-color: #434d54;
+$background-color: #ffffff;
+$overlay: transparentize(#333333, 0.55);
+
+// Fonts
+$font-base: 'Lora', Georgia, serif;
+$font-sans: Helvetica, sans-serif;
+$font-heading: $font-base;
+
+// Screen Sizes
+$mobile-size: em(320);
+$tablet-size: em(720);
+$desktop-size: em(960);
+
+// Bourbon Neat Breakpoints
+$mobile: new-breakpoint(min-width $mobile-size 4);
+$tablet: new-breakpoint(min-width $tablet-size 8);
+$desktop: new-breakpoint(min-width $desktop-size 12);
