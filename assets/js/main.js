@@ -2,8 +2,6 @@
 # Only the main JS file needs front matter
 ---
 
-Turbolinks.start();
-
 (function($) {
     $(function() {
         $(window).on('scroll load', function () {

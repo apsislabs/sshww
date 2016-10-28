@@ -1,5 +1,3 @@
-$nav-height: 55px;
-
 .nav {
     @include position(fixed, $padding-base $padding-base null $padding-base);
     @include transition(background 0.5s ease, top .25s ease-in-out);
@@ -36,7 +34,8 @@ $nav-height: 55px;
         }
     }
 
-    &--scrolled {
+    &--scrolled,
+    &--dark {
         background: transparentize(white, 0.15);
         border-bottom: 1px solid #eee;
         top: 0 !important;
