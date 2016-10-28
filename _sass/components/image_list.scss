@@ -1,0 +1,14 @@
+.image-list {
+    list-style: none;
+    overflow: hidden;
+
+    .image-list__item {
+        float: left;
+        width: 20%;
+        padding: $padding-base;
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+}

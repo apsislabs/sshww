@@ -13,5 +13,11 @@ Turbolinks.start();
                 $(".nav--stick").removeClass("nav--scrolled");
             }
         });
+
+        $('.grid').masonry({
+            itemSelector: '.grid__item',
+            columnWidth: '.grid__sizer',
+            percentPosition: true
+        });
     });
 })(jQuery);

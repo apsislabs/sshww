@@ -1,0 +1,10 @@
+<ul class="gallery grid">
+    <li class="grid__sizer"></li>
+    {% for list_image in include.images %}
+        <li class="gallery__item grid__item">
+            <a href="{{ list_image.source }}" title="{{ list_image.name }}" data-lightbox="{{include.gallery}}">
+                <img src="{{list_image.thumbnail}}" alt="{{ list_image.name }}" class="gallery__image">
+            </a>
+        </li>
+    {% endfor %}
+</ul>

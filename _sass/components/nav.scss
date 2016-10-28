@@ -3,7 +3,7 @@ $nav-height: 55px;
 .nav {
     @include position(fixed, $padding-base $padding-base null $padding-base);
     @include transition(background 0.5s ease, top .25s ease-in-out);
-    z-index: 99999;
+    z-index: 20;
     height: $nav-height;
     font-size: 18px;
 
