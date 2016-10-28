@@ -1,15 +1,9 @@
 ---
-layout: default
+layout: page
 nav_class: nav--dark
 title: Gallery
 ---
 
-<article class="page-wrapper">
-    <header class="page-title">
-        <h1>{{ page.title }}</h1>
-    </header>
-
-    <div class="gallery-wrapper">
-        {% include lightbox_gallery.html images=site.data.gallery_images gallery="gallery" %}
-    </div>
-</article>
+<div class="gallery-wrapper">
+    {% include lightbox_gallery.html images=site.data.gallery_images gallery="gallery" %}
+</div>
