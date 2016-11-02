@@ -12,10 +12,17 @@
             }
         });
 
-        $('.grid').masonry({
-            itemSelector: '.grid__item',
-            columnWidth: '.grid__sizer',
-            percentPosition: true
+        var $grid = $('.grid').imagesLoaded( function() {
+            $grid.masonry({
+                itemSelector: '.grid__item',
+                columnWidth: '.grid__sizer',
+                percentPosition: true
+            });
+        });
+
+        $('[data-background]').each(function() {
+            console.log($(this).data('background'));
+            $(this).backstretch($(this).data('background'));
         });
     });
 })(jQuery);

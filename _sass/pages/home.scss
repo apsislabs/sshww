@@ -4,7 +4,6 @@
     position: relative;
     margin-bottom: $padding-base;
 
-    @include cover('/assets/img/forest.jpg', $footer-background);
     @include overlay($overlay);
 
     @include media($tablet) {
